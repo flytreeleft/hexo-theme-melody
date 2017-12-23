@@ -167,6 +167,79 @@
     &:after
       content: ")"
 
+.quote-lists
+  hr
+    display: none
+
+  /* https://codepen.io/iPawan/pen/emrPKP */
+  blockquote
+    position: relative;
+    display:block;
+    font-size: 1rem;
+    line-height: 1.2;
+    background: #fff;
+    margin: 1rem auto;
+    padding: .6rem 1.2rem .6rem 2rem;
+    word-wrap: break-word;
+    box-shadow: .2rem .2rem 1rem #ccc;
+    border-left-style: solid;
+    border-left-width: 1rem;
+    border-right-style: solid;
+    border-right-width: .2rem;
+
+    &:before
+      top: .2rem;
+      left: .4rem;
+      position: absolute;
+      color: #999;
+      content: "\201C"; /* Unicode for Left Double Quote */
+      font-family: Georgia, serif;
+      font-size: 3.2rem;
+      font-weight: bold;
+
+    &:after
+      content: "";
+
+    /*Grapefruit Color Palette*/
+    &:nth-of-type(8n)
+      border-left-color: #ed5565;
+      border-right-color: #da4453;
+
+    /*Sunflower Color Palette*/
+    &:nth-of-type(8n+1)
+      border-left-color: #ffcd69;
+      border-right-color: #f6ba59;
+
+    /*Grass Color Palette*/
+    &:nth-of-type(8n+2)
+      border-left-color: #9fd477;
+      border-right-color: #8bc163;
+
+    /*Mint Color Palette*/
+    &:nth-of-type(8n+3)
+      border-left-color: #46cfb0;
+      border-right-color: #34bc9d;
+
+    /*Aqua Color Palette*/
+    &:nth-of-type(8n+4)
+      border-left-color: #4fc2e5;
+      border-right-color: #3bb0d6;
+
+    /*Blue Jeans Color Palette*/
+    &:nth-of-type(8n+5)
+      border-left-color: #5e9de6;
+      border-right-color: #4b8ad6;
+
+    /*Lavander Color Palette*/
+    &:nth-of-type(8n+6)
+      border-left-color: #ad93e6;
+      border-right-color: #977bd5;
+
+    /*Pinkrose Color Palette*/
+    &:nth-of-type(8n+7)
+      border-left-color: #ed87bd;
+      border-right-color: #d870a9;
+
 @media screen and (max-width: $sm)
   .recent-post-item
     .article-title
