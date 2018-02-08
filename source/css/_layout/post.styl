@@ -59,7 +59,7 @@
     cursor: pointer
 
   #post-info
-    padding: 3rem 1rem
+    padding: 5rem 1rem
     width: 100%
     color: $light-grey
     text-align: center
@@ -286,6 +286,11 @@ img
 
   &__desc
     color: $grey
+
+@media screen and (max-height: $sm)
+  #top-container
+    #post-info
+      padding: 3rem 1rem
 
 @media screen and (max-width: $sm)
   .layout
