@@ -200,6 +200,24 @@
     &:after
       content: "";
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6
+      &:nth-of-type(1)
+        opacity: 0
+        top: 0
+        left: 0
+        bottom: 0
+        margin: 0
+        width: 1.8rem
+        position: absolute
+        overflow: hidden
+      &:before
+        display: none
+
     /*Grapefruit Color Palette*/
     &:nth-of-type(8n)
       border-left-color: #ed5565;
