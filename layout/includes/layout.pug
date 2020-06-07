@@ -58,3 +58,5 @@ html(lang=config.language)
       each url in theme.scripts
         script(src=url + '?version=' + theme.version)
     include ./additional-js.pug
+    //- google adsense script
+    script(src=`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js` async data-ad-client="ca-pub-6398287269510744")
