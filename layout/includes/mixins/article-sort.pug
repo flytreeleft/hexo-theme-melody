@@ -1,12 +1,13 @@
 mixin articleSort(posts)
   .article-sort
     - var year
+    - var order_by = (config.archive_generator.order_by || '-date').replace(/^-/, '')
     - posts.each(function (article) {
-      - var tempYear = date(article.date, 'YYYY')
+      - var tempYear = date(article[order_by], 'YYYY')
       if tempYear !== year
-        - year = tempYear 
+        - year = tempYear
         .article-sort-item.year= year
       .article-sort-item
-        time.article-sort-item__time= date(article.date)
+        time.article-sort-item__time= date(article[order_by])
         a.article-sort-item__title(href=url_for(article.path) target="_blank")= article.title || 'No Title'
     - })
